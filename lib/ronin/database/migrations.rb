@@ -20,3 +20,4 @@
 require 'ronin/database/migrations/migrations'
 require 'ronin/database/migrations/1.0.0'
 require 'ronin/database/migrations/1.1.0'
+require 'ronin/database/migrations/1.6.0'
