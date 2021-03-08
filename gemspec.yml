@@ -1,0 +1,46 @@
+name: ronin-db
+summary: A database library for ronin-rb
+description: |
+  ronin-db is a database library for ronin-rb. ronin-db provides familiar ORM
+  models for interacting with the database's SQL tables and querying/storing
+  security data, such as URLs, email addresses, host names, IPs, ports, etc.
+  It also provides CLI commands for managing the database(s).
+
+license: GPL-3.0
+authors: Postmodern
+email: postmodern.mod3@gmail.com
+homepage: https://ronin-rb.dev
+has_yard: true
+
+generated_files:
+ - man/ronin-campaigns.1
+ - man/ronin-creds.1
+ - man/ronin-database.1
+ - man/ronin-emails.1
+ - man/ronin-hosts.1
+ - man/ronin-ips.1
+ - man/ronin-urls.1
+
+required_ruby_version: ">= 1.9.1"
+
+dependencies:
+  # DataMapper adapters:
+  dm-sqlite-adapter: ~> 1.2
+  # DataMapper dependencies:
+  dm-core: ~> 1.2
+  dm-types: ~> 1.2
+  dm-migrations: ~> 1.2
+  dm-validations: ~> 1.2
+  dm-aggregates: ~> 1.2
+  dm-timestamps: ~> 1.2
+  dm-serializer: ~> 1.2
+  # DataMapper plugins:
+  # Library dependencies:
+  uri-query_params: ~> 0.6
+  # Ronin dependencies:
+  ronin-support: ~> 0.6
+
+development_dependencies:
+  bundler: ~> 2.0
+  yard: ~> 0.8
+  yard-dm: ~> 0.1
